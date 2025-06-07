@@ -49,7 +49,7 @@ def get_picture_by_id(id):
     if len(res)>0 :
         return res[0]
     else :
-        return "bad",404
+        return {"message": "picture not found"}, 404
     
 
 
